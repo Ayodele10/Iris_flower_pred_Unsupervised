@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Iris Predictor</h2>
+
+    <form method="POST">
+        Sepal Length: <input type="text" name="sepal_length"><br><br>
+        Sepal Width: <input type="text" name="sepal_width"><br><br>
+        Petal Length: <input type="text" name="petal_length"><br><br>
+        Petal Width: <input type="text" name="petal_width"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    {% if prediction %}
+        <h3>{{ prediction }}</h3>
+    {% endif %}
+
+</body>
+</html>
